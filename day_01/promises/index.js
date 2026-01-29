@@ -15,12 +15,15 @@ const mypromise = new Promise((resolve, reject) => {
 //     console.log("error occured: " + error);
 // });
 
-const f1 = async () => {
-    const msg = await mypromise;
-    console.log(msg);
+// const f1 = async () => {
+//     const msg = await mypromise;
+//     console.log(msg);
+// }
+
+const getdata = async () => {
+    const data = await fetch('https://fakestoreapi.com/products');
+    console.log(await data.json());
 }
 
-
-
-
+getdata();
 
