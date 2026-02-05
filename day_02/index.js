@@ -1,6 +1,7 @@
 import fs from 'fs';
 
-const writeFFileSync =()=>{
-    console.log("Hello world");
+const writeFileSync =(path, data)=>{
+    fs.writeFileSync(path,data);
+    console.log("data has written successfully");
 }
-writeFFileSync();
+writeFileSync("./example.txt","this data is written through sync fun:'writerfilesync())'");
