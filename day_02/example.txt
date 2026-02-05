@@ -1,1 +1,1 @@
-this data is written through sync fun:'writerfilesync())'
+this data is written through sync fun:'writerfilesync())'this data is appended through sync fun:'appendfilesync()'
